@@ -62,13 +62,13 @@ sudo pacman -S base-devel gcc git grub qemu qemu-arch-extra xorriso
    git clone https://github.com/BattleBoar/EYOS---Operating-System.git
    cd EYOS---Operating-System
 ```
-### Компилирование 
+### Компилирование x86-ARM
 ``` bash
-    ./build86.sh - для x86_64 
-    ./buildarm.sh - для arm64
+    ./build86.sh 
+    ./buildarm.sh 
     cd build
 ```
-### Запуск
+### Запуск x86-ARM
 
 ```bash
    qemu-system-x86_64 -kernel eyos.iso -m 1g
