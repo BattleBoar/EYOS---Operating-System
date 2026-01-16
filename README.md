@@ -2,13 +2,13 @@
 **Делай как хочешь, делай что хочешь.**
 
 # EYOS — Эксперементальная|Учебная|Узконаправленная операционная система #
-
+> EYOS not UNIX, EYOS not DOS, EYOS is Linux-BSD like.
 ## Сообщество и создатели
 
 Проект создаётся энтузиастоми. Мы считаем, что каждый, кто вносит вклад — будь то код, идея или даже форк — становится частью EYOS. Имена всех чьи пулл-реквесты будут приняты, а также активных форкеров, пополнят раздел авторов.
 
 *   **Основатели:** N.A.C. 
-*   **Создатели:** N_A_C_CEO(Main Proggrammer C/C++), Cherkir (Main tester, Q/A), CapybR1C (Helper, Sercher info)
+*   **Создатели:** N_A_C_CEO:(Main Proggrammer C/C++).
 *   **Сообщество:** We.
 
 ## Дорожная карта
@@ -38,19 +38,27 @@
 
 План может и должен меняться по ходу разработки.
 
-## Технологии и сборка (Arch Linux)
+## Технологии и сборка
 
-*   **Язык:** C++/:11
-*   **Инструментальная цепочка:** GNU Binutils(ld, G++ 11, libcxx), GRUB2 + MultiBoot2
+*   **Языки:** C++/:23, C/:17, NASM
+*   **Инструментальная цепочка:** GNU BinUtils(ld, G++ 11, Nasm, Gcc), GRUB2 + MultiBoot2
 *   **Целевая архитектура:** x86_64
 *   **Разрядность:** 64bit
-*   **Структура ядра:** Монолит, многозадачное
+*   **Структура ядра:** Монолит, многозадачное, модульное
 
 ### Требования для сборки
-
+#### Arch
 ```bash
 sudo pacman -S base-devel nasm gcc git cmake grub qemu xorriso
 ```
+
+#### Debian
+```bash
+sudo apt install base-devel nasm gcc git cmake grub qemu xorriso
+```
+
+> Советаю включить multilib и настройках
+
 ### Клонирование
 
 ```bash
@@ -67,6 +75,12 @@ sudo pacman -S base-devel nasm gcc git cmake grub qemu xorriso
 ```bash
    qemu-system-x86_64 -cdrom eyos.iso -m 1g
 ```
+#### или
+
+```bash
+   qemu-system-x86_64 -cdrom eyos.img -m 1g
+```
+
 ## Лицензия
 
 Это свободное программное обеспечение. Вы можете использовать, изучать, изменять и распространять его в соответствии с условиями лицензии GNU General Public License v3.0. Полный текст доступен в файле LICENSE.
