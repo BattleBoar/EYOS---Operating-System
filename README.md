@@ -49,7 +49,7 @@
 ### Требования для сборки
 
 ```bash
-sudo pacman -S base-devel gcc git grub qemu xorriso
+sudo pacman -S base-devel nasm gcc git cmake grub qemu xorriso
 ```
 ### Клонирование
 
