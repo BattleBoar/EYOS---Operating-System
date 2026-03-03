@@ -1,4 +1,3 @@
-
 **Делай как хочешь, делай что хочешь.**
 
 # EYOS - Everything on your computer belongs to you #
@@ -39,12 +38,12 @@ sudo apt install base-devel nasm gcc git cmake xorriso
     ./build86.sh 
     cd build86
 ```
-### Запуск _Qemu_ (Тестируется)
+### Запуск _Qemu_ x86 (Тестируется)
 
 ```bash
    qemu-system-x86_64 -cdrom eyos.iso -m 1g
 ```
-#### или для .img
+#### или для .img x86
 
 ```bash
    qemu-system-x86_64 -cdrom eyos.img -m 1g
@@ -52,6 +51,6 @@ sudo apt install base-devel nasm gcc git cmake xorriso
 
 ## Лицензия
 
-Это свободное программное обеспечение. Вы можете использовать, изучать, распространять его в соответствии с условиями лицензиями MIT License (B.A.D.Boot), Apache License 2.0, (EYrnel) BSD 2-Clause license (SUAM). Полный текст LICENSE доступен на страницах компонентах и в интернете.
+Это свободное программное обеспечение. Вы можете использовать, изучать, распространять его в соответствии с условиями лицензиями MIT License (B.A.D.Boot), Apache License 2.0 (EYrnel), BSD 2-Clause license (SUAM). Полный текст LICENSE доступен на страницах компонентах и в интернете.
 
 > Примечание: Это хоть и проект с вободным распростронением, но: выдавать эту ос за полностью свою, без прямой ссылки на офф проект приравневается к вороству.
